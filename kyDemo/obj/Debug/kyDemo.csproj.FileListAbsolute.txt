@@ -1,0 +1,38 @@
+C:\Users\17299\source\repos\kyDemo\kyDemo\bin\Debug\kyDemo.exe.config
+C:\Users\17299\source\repos\kyDemo\kyDemo\bin\Debug\kyDemo.exe
+C:\Users\17299\source\repos\kyDemo\kyDemo\bin\Debug\kyDemo.pdb
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.AssemblyReference.cache
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.Form1.resources
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.Properties.Resources.resources
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.GenerateResource.cache
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.CoreCompileInputs.cache
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.exe
+C:\Users\17299\source\repos\kyDemo\kyDemo\obj\Debug\kyDemo.pdb
+E:\Project\kyDemo\kyDemo\bin\Debug\kyDemo.exe.config
+E:\Project\kyDemo\kyDemo\bin\Debug\kyDemo.exe
+E:\Project\kyDemo\kyDemo\bin\Debug\kyDemo.pdb
+E:\Project\kyDemo\kyDemo\bin\Debug\NModbus4.dll
+E:\Project\kyDemo\kyDemo\bin\Debug\RMCLink.Interop.dll
+E:\Project\kyDemo\kyDemo\bin\Debug\NModbus4.xml
+E:\Project\kyDemo\kyDemo\bin\Debug\RMCLink.Interop.xml
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.EquipmentConfiguration.resources
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.Form1.resources
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.ProcessSettings.resources
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.Properties.Resources.resources
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.GenerateResource.cache
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.Up2Date
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.exe
+E:\Project\kyDemo\kyDemo\obj\Debug\kyDemo.pdb
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.Forms.MotionParameters.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.Forms.TestPage.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.exe
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.pdb

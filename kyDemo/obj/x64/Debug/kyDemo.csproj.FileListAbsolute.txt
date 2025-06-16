@@ -1,0 +1,156 @@
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\RMCLink.Interop.dll
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+E:\Project\kyDemo\kyDemo\bin\x64\Debug\RMCLink.Interop.xml
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Form1.resources
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\Project\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\kyDemo2\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\17299\Desktop\kyDemo\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年8月7日\kyDemo(1)\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月4日\kyDemo\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\17299\Desktop\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\NModbus4.dll
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\bin\x64\Debug\NModbus4.xml
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\1.破碎机\14. 自主上位机\测试版\2024年9月13日下午\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+D:\ProgramData\WeChat Files\wxid_d0hfb8o9rodb22\FileStorage\File\2024-10\kyDemo2024年10月20日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\NModbus.dll
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\bin\x64\Debug\NModbus.xml
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
