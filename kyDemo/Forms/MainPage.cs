@@ -2,15 +2,7 @@
 using kyDemo.Services;
 using kyDemo.Services.client;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kyDemo
@@ -133,6 +125,10 @@ namespace kyDemo
             PLCConnectionManager.Instance.StopMove();
             TreatmentProcess.running = false;
         }
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void button11_Click(object sender, EventArgs e)
         {
@@ -140,9 +136,10 @@ namespace kyDemo
             testPage.ShowDialog();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)
         {
-
+            IOMonitor testPage = new IOMonitor(this);
+            testPage.ShowDialog();
         }
     }
 }

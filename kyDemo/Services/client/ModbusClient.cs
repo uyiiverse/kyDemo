@@ -17,8 +17,12 @@ namespace kyDemo.Services.client
         private string _ipAddress;
         private int _port;
         private bool _connected = false;
+        private byte _slaveId = 1;
+        private ushort _startAddress = 150;
+        private ushort _numRegisters = 50;
+        public ushort[] _controlValues;
 
-        // 私有构造函数，防止外部实例化
+        public bool IsConnected => _connected;
         private ModbusClient() { }
 
         // 获取 ModbusClient 的唯一实例（单例模式）
@@ -69,6 +73,63 @@ namespace kyDemo.Services.client
             }
         }
 
+        public void SendModbusDataToRMC()
+        {
+            int JingxiaWuliBendiKaiguanlControlValuesIndex = 157 - _startAddress;
+            int YeyazhanDianjiQitingControlValuesIndex = 177 - _startAddress;
+            int EmergencyStopControlValuesIndex = 179 - _startAddress;
+            int PosuiControlValuesIndex = 181 - _startAddress;
+            int LabaControlValuesIndex = 183 - _startAddress;
+
+            int chandouControlValuesIndex = 167 - _startAddress;
+            int huizhuanControlValuesIndex = 161 - _startAddress;
+            int douganControlValuesIndex = 165 - _startAddress;
+            int dabiControlValuesIndex = 163 - _startAddress;
+            int chandouSignControlValuesIndex = 175 - _startAddress;
+            int huizhuanSignControlValuesIndex = 169 - _startAddress;
+            int douganSignControlValuesIndex = 173 - _startAddress;
+            int dabiSignControlValuesIndex = 171 - _startAddress;
+
+            Console.WriteLine("控制值：");
+            Console.WriteLine($"井下物理本地开关：{ConvertToSignedInt(_controlValues[JingxiaWuliBendiKaiguanlControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(_controlValues[JingxiaWuliBendiKaiguanlControlValuesIndex], 78);
+
+            Console.WriteLine($"液压站电机启停：{ConvertToSignedInt(_controlValues[YeyazhanDianjiQitingControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[huizhuanControlValuesIndex], 88);
+
+            Console.WriteLine($"急停：{ConvertToSignedInt(_controlValues[EmergencyStopControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[EmergencyStopControlValuesIndex], 89);
+
+            Console.WriteLine($"破碎：{ConvertToSignedInt(_controlValues[PosuiControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[PosuiControlValuesIndex], 90);
+
+            Console.WriteLine($"喇叭：{ConvertToSignedInt(_controlValues[LabaControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[PosuiControlValuesIndex], 91);
+
+            Console.WriteLine($"铲斗控制值：{ConvertToSignedInt(_controlValues[chandouControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(_controlValues[chandouControlValuesIndex], 83);
+
+            Console.WriteLine($"回转控制值：{ConvertToSignedInt(_controlValues[huizhuanControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[huizhuanControlValuesIndex], 80);
+
+            Console.WriteLine($"斗杆控制值：{ConvertToSignedInt(_controlValues[douganControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[douganControlValuesIndex], 82);
+
+            Console.WriteLine($"大臂上升下降控制值：{ConvertToSignedInt(_controlValues[dabiControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[dabiControlValuesIndex], 81);
+
+            Console.WriteLine($"铲斗正负：{ConvertToSignedInt(_controlValues[chandouSignControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[chandouSignControlValuesIndex], 87);
+
+            Console.WriteLine($"回转正负：{ConvertToSignedInt(_controlValues[huizhuanSignControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[huizhuanSignControlValuesIndex], 84);
+
+            Console.WriteLine($"斗杆正负：{ConvertToSignedInt(_controlValues[douganSignControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[douganSignControlValuesIndex], 86);
+
+            Console.WriteLine($"大臂正负：{ConvertToSignedInt(_controlValues[dabiSignControlValuesIndex])}");
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[dabiSignControlValuesIndex], 85);
+        }
         // 开启一个任务来定时读取数据
         public void StartReading(CancellationToken cancellationToken)
         {
@@ -85,66 +146,9 @@ namespace kyDemo.Services.client
                     try
                     {
                         // 读取40001至40005的控制值
-                        byte slaveId = 1;
-                        ushort startAddress = 150;
-                        ushort numRegisters = 50;
-                        ushort[] controlValues = _modbusMaster.ReadHoldingRegisters(slaveId, startAddress, numRegisters);
-
-                        // 处理寄存器 40179 (急停状态位)
-                       // int EmergencyStopControlValuesIndex = 179 - startAddress;
-                       /* ushort register40001 = controlValues[EmergencyStopControlValuesIndex];
-                        Console.WriteLine("寄存器40179 (开关状态)：");
-                        for (int bit = 15; bit >= 0; bit--)
-                        {
-                            bool bitValue = (register40001 & (1 << bit)) != 0;
-                            Console.WriteLine($"Bit {bit}: {bitValue}");
-                        }*/
-
-                        //PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(controlValues[EmergencyStopControlValuesIndex], 61); ; // 急停
-                        int JingxiaWuliBendiKaiguanlControlValuesIndex = 157 - startAddress;
-                        int YeyazhanDianjiQitingControlValuesIndex = 177 - startAddress;
-                        int EmergencyStopControlValuesIndex = 179 - startAddress;
-                        int PosuiControlValuesIndex = 181 - startAddress;
-                        int LabaControlValuesIndex = 183 - startAddress;
-
-                        int chandouControlValuesIndex = 167 - startAddress;
-                        int huizhuanControlValuesIndex = 161 - startAddress;
-                        int douganControlValuesIndex = 165 - startAddress;
-                        int dabiControlValuesIndex = 163 - startAddress;
-                        int chandouSignControlValuesIndex = 175 - startAddress;
-                        int huizhuanSignControlValuesIndex = 169 - startAddress;
-                        int douganSignControlValuesIndex = 173 - startAddress;
-                        int dabiSignControlValuesIndex = 171 - startAddress;
-                      
-                        Console.WriteLine("控制值：");
-                        Console.WriteLine($"井下物理本地开关：{ConvertToSignedInt(controlValues[JingxiaWuliBendiKaiguanlControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(controlValues[JingxiaWuliBendiKaiguanlControlValuesIndex], 78);
-                        Console.WriteLine($"液压站电机启停：{ConvertToSignedInt(controlValues[YeyazhanDianjiQitingControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[huizhuanControlValuesIndex], 88);
-                        Console.WriteLine($"急停：{ConvertToSignedInt(controlValues[EmergencyStopControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[EmergencyStopControlValuesIndex], 89);
-                        Console.WriteLine($"破碎：{ConvertToSignedInt(controlValues[PosuiControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[PosuiControlValuesIndex], 90);
-                        Console.WriteLine($"喇叭：{ConvertToSignedInt(controlValues[LabaControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[PosuiControlValuesIndex], 91);
-
-
-                        Console.WriteLine($"铲斗控制值：{ConvertToSignedInt(controlValues[chandouControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(controlValues[chandouControlValuesIndex],83);
-                        Console.WriteLine($"回转控制值：{ConvertToSignedInt(controlValues[huizhuanControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[huizhuanControlValuesIndex], 80);
-                        Console.WriteLine($"斗杆控制值：{ConvertToSignedInt(controlValues[douganControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[douganControlValuesIndex], 82);
-                        Console.WriteLine($"大臂上升下降控制值：{ConvertToSignedInt(controlValues[dabiControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[dabiControlValuesIndex], 81);
-                        Console.WriteLine($"铲斗正负：{ConvertToSignedInt(controlValues[chandouSignControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[chandouSignControlValuesIndex], 87);
-                        Console.WriteLine($"回转正负：{ConvertToSignedInt(controlValues[huizhuanSignControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[huizhuanSignControlValuesIndex], 84);
-                        Console.WriteLine($"斗杆正负：{ConvertToSignedInt(controlValues[douganSignControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[douganSignControlValuesIndex], 86);
-                        Console.WriteLine($"大臂正负：{ConvertToSignedInt(controlValues[dabiSignControlValuesIndex])}");
-                        PLCConnectionManager.Instance.WriteOneDataToRMCRegister(controlValues[dabiSignControlValuesIndex], 85);
+                        _controlValues = _modbusMaster.ReadHoldingRegisters(_slaveId, _startAddress, _numRegisters);
+                        // 将数据发送给RMC
+                        SendModbusDataToRMC();
                     }
                     catch (Exception ex)
                     {
@@ -202,5 +206,6 @@ namespace kyDemo.Services.client
                 Console.WriteLine("Stopped reading task.");
             }
         }
+
     }
 }

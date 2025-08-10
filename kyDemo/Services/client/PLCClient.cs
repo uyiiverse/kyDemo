@@ -121,7 +121,7 @@ namespace kyDemo
             }
             catch (ReadWriteFailedException ex)
             {
-                System.Windows.Forms.MessageBox.Show("Unable to read data. " + ex.Message);
+                MessageBox.Show("Unable to read data. " + ex.Message);
             }
         }
         public void WriteOneDataToRMCRegister(float data, int offset)    //只写入一个指定的寄存器
@@ -138,7 +138,7 @@ namespace kyDemo
             }
             catch (ReadWriteFailedException ex)
             {
-                System.Windows.Forms.MessageBox.Show("Unable to read data. " + ex.Message);
+                MessageBox.Show("Unable to read data. " + ex.Message);
             }
         }
         public void WriteOneDataToRMCRegisterAbsolute(float data, int address)    //只写入一个指定的寄存器
@@ -209,7 +209,7 @@ namespace kyDemo
             return readData[8];
         }
 
-        public float Get5()  //获取小臂拉线传感器值
+        public float GetL5()  //获取小臂拉线传感器值
         {
             return readData[9];
         }

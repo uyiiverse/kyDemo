@@ -154,3 +154,23 @@ E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\k
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\NModbus.dll
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\NModbus.xml
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.IOMonitor.resources

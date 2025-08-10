@@ -62,6 +62,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -109,6 +110,7 @@
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Controls.Add(this.button11);
+            this.flowLayoutPanel1.Controls.Add(this.button12);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(137, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -470,6 +472,17 @@
             this.label12.Text = "undefined";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button12
+            // 
+            this.button12.AutoSize = true;
+            this.button12.Location = new System.Drawing.Point(978, 3);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(161, 101);
+            this.button12.TabIndex = 6;
+            this.button12.Text = "监控窗口";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -525,6 +538,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 

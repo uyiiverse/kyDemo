@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Xml;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using Newtonsoft.Json;
-using System.IO;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace kyDemo.Forms
 {
