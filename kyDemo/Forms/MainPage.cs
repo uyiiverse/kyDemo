@@ -4,10 +4,11 @@ using kyDemo.Services.client;
 using System;
 using System.Threading;
 using System.Windows.Forms;
+using ReaLTaiizor.Forms;
 
 namespace kyDemo
 {
-    public partial class MainPage : Form
+    public partial class MainPage : MaterialForm
     {
         private bool isRemote; // 用于记录当前状态，true表示“远程”，false表示“自主”
         private Thread updateThread;

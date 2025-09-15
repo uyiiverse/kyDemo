@@ -174,3 +174,5 @@ C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.IOMonitor.resources
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.dll
+C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.xml

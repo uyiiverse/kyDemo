@@ -36,7 +36,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label1 = new ReaLTaiizor.Controls.MaterialLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button6 = new System.Windows.Forms.Button();
@@ -44,25 +45,24 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label13 = new ReaLTaiizor.Controls.MaterialLabel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.label14 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label15 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label2 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label3 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label4 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label5 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label6 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label7 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label8 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label9 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label20 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label10 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label21 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label11 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label22 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label12 = new ReaLTaiizor.Controls.MaterialLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -93,13 +93,13 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(-2, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.69231F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.30769F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1281, 1001);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1309, 988);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -112,9 +112,9 @@
             this.flowLayoutPanel1.Controls.Add(this.button11);
             this.flowLayoutPanel1.Controls.Add(this.button12);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(137, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(139, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1141, 111);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1167, 109);
             this.flowLayoutPanel1.TabIndex = 3;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -173,15 +173,29 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // button12
+            // 
+            this.button12.AutoSize = true;
+            this.button12.Location = new System.Drawing.Point(978, 3);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(161, 101);
+            this.button12.TabIndex = 6;
+            this.button12.Text = "监控窗口";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Depth = 0;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Image = global::kyDemo.Properties.Resources.logo;
             this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 117);
+            this.label1.Size = new System.Drawing.Size(130, 115);
             this.label1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -194,11 +208,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label13, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(137, 120);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(139, 118);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1141, 878);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1167, 867);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // flowLayoutPanel3
@@ -211,10 +225,10 @@
             this.flowLayoutPanel3.Controls.Add(this.button8);
             this.flowLayoutPanel3.Controls.Add(this.button9);
             this.flowLayoutPanel3.Controls.Add(this.button10);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(994, 4);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(1020, 4);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(143, 870);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(143, 859);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
             // button6
@@ -277,9 +291,12 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Depth = 0;
+            this.label13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label13.Location = new System.Drawing.Point(3, 0);
+            this.label13.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(984, 878);
+            this.label13.Size = new System.Drawing.Size(1010, 867);
             this.label13.TabIndex = 0;
             this.label13.Text = "相机图像";
             // 
@@ -306,16 +323,18 @@
             this.flowLayoutPanel2.Controls.Add(this.label22);
             this.flowLayoutPanel2.Controls.Add(this.label12);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 120);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 118);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(128, 878);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(130, 867);
             this.flowLayoutPanel2.TabIndex = 4;
             this.flowLayoutPanel2.WrapContents = false;
             // 
             // label14
             // 
-            this.label14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label14.Depth = 0;
+            this.label14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label14.Location = new System.Drawing.Point(3, 0);
+            this.label14.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(120, 36);
             this.label14.TabIndex = 13;
@@ -325,7 +344,10 @@
             // label15
             // 
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label15.Depth = 0;
+            this.label15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label15.Location = new System.Drawing.Point(3, 36);
+            this.label15.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(120, 77);
             this.label15.TabIndex = 14;
@@ -334,8 +356,10 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Depth = 0;
+            this.label2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label2.Location = new System.Drawing.Point(3, 113);
+            this.label2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 36);
             this.label2.TabIndex = 1;
@@ -345,7 +369,10 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Depth = 0;
+            this.label3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label3.Location = new System.Drawing.Point(3, 149);
+            this.label3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 77);
             this.label3.TabIndex = 2;
@@ -354,8 +381,10 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Depth = 0;
+            this.label4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label4.Location = new System.Drawing.Point(3, 226);
+            this.label4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 40);
             this.label4.TabIndex = 3;
@@ -365,7 +394,10 @@
             // label5
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Depth = 0;
+            this.label5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label5.Location = new System.Drawing.Point(3, 266);
+            this.label5.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 77);
             this.label5.TabIndex = 12;
@@ -374,8 +406,10 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Depth = 0;
+            this.label6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label6.Location = new System.Drawing.Point(3, 343);
+            this.label6.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 36);
             this.label6.TabIndex = 5;
@@ -385,7 +419,10 @@
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Depth = 0;
+            this.label7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label7.Location = new System.Drawing.Point(3, 379);
+            this.label7.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 77);
             this.label7.TabIndex = 6;
@@ -394,8 +431,10 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Depth = 0;
+            this.label8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label8.Location = new System.Drawing.Point(3, 456);
+            this.label8.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 27);
             this.label8.TabIndex = 7;
@@ -405,7 +444,10 @@
             // label9
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Depth = 0;
+            this.label9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label9.Location = new System.Drawing.Point(3, 483);
+            this.label9.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(120, 77);
             this.label9.TabIndex = 8;
@@ -414,8 +456,10 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Depth = 0;
+            this.label20.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label20.Location = new System.Drawing.Point(3, 560);
+            this.label20.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(120, 27);
             this.label20.TabIndex = 15;
@@ -425,7 +469,10 @@
             // label10
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Depth = 0;
+            this.label10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label10.Location = new System.Drawing.Point(3, 587);
+            this.label10.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(120, 77);
             this.label10.TabIndex = 16;
@@ -434,8 +481,10 @@
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.Depth = 0;
+            this.label21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label21.Location = new System.Drawing.Point(3, 664);
+            this.label21.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(120, 27);
             this.label21.TabIndex = 17;
@@ -445,7 +494,10 @@
             // label11
             // 
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Depth = 0;
+            this.label11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label11.Location = new System.Drawing.Point(3, 691);
+            this.label11.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 77);
             this.label11.TabIndex = 18;
@@ -454,8 +506,10 @@
             // 
             // label22
             // 
-            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Depth = 0;
+            this.label22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label22.Location = new System.Drawing.Point(3, 768);
+            this.label22.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(120, 27);
             this.label22.TabIndex = 19;
@@ -465,23 +519,15 @@
             // label12
             // 
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Depth = 0;
+            this.label12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label12.Location = new System.Drawing.Point(3, 795);
+            this.label12.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(120, 77);
             this.label12.TabIndex = 20;
             this.label12.Text = "undefined";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button12
-            // 
-            this.button12.AutoSize = true;
-            this.button12.Location = new System.Drawing.Point(978, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(161, 101);
-            this.button12.TabIndex = 6;
-            this.button12.Text = "监控窗口";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // MainPage
             // 
@@ -505,7 +551,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.MaterialLabel label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button2;
@@ -513,30 +559,30 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private ReaLTaiizor.Controls.MaterialLabel label2;
+        private ReaLTaiizor.Controls.MaterialLabel label3;
+        private ReaLTaiizor.Controls.MaterialLabel label4;
+        private ReaLTaiizor.Controls.MaterialLabel label6;
+        private ReaLTaiizor.Controls.MaterialLabel label7;
+        private ReaLTaiizor.Controls.MaterialLabel label8;
+        private ReaLTaiizor.Controls.MaterialLabel label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label13;
+        private ReaLTaiizor.Controls.MaterialLabel label13;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label12;
+        private ReaLTaiizor.Controls.MaterialLabel label5;
+        private ReaLTaiizor.Controls.MaterialLabel label14;
+        private ReaLTaiizor.Controls.MaterialLabel label15;
+        private ReaLTaiizor.Controls.MaterialLabel label20;
+        private ReaLTaiizor.Controls.MaterialLabel label10;
+        private ReaLTaiizor.Controls.MaterialLabel label21;
+        private ReaLTaiizor.Controls.MaterialLabel label11;
+        private ReaLTaiizor.Controls.MaterialLabel label22;
+        private ReaLTaiizor.Controls.MaterialLabel label12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
     }

@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label6 = new ReaLTaiizor.Controls.MaterialLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label4 = new ReaLTaiizor.Controls.MaterialLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label3 = new ReaLTaiizor.Controls.MaterialLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new ReaLTaiizor.Controls.MaterialLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label8 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label2 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label5 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label7 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label10 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label11 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label12 = new ReaLTaiizor.Controls.MaterialLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label13 = new ReaLTaiizor.Controls.MaterialLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -361,29 +361,29 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
+        private ReaLTaiizor.Controls.MaterialLabel label6;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
+        private ReaLTaiizor.Controls.MaterialLabel label4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
+        private ReaLTaiizor.Controls.MaterialLabel label3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.MaterialLabel label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private ReaLTaiizor.Controls.MaterialLabel label9;
+        private ReaLTaiizor.Controls.MaterialLabel label8;
+        private ReaLTaiizor.Controls.MaterialLabel label2;
+        private ReaLTaiizor.Controls.MaterialLabel label5;
+        private ReaLTaiizor.Controls.MaterialLabel label7;
+        private ReaLTaiizor.Controls.MaterialLabel label10;
+        private ReaLTaiizor.Controls.MaterialLabel label11;
+        private ReaLTaiizor.Controls.MaterialLabel label12;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label13;
+        private ReaLTaiizor.Controls.MaterialLabel label13;
         private System.Windows.Forms.Button button2;
     }
 }
