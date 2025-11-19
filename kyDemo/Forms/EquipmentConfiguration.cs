@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.Net;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace kyDemo
 {
@@ -85,18 +86,17 @@ namespace kyDemo
         //连接相机
         private async void button4_Click(object sender, EventArgs e)
         {
-            string ipAddress = txtCameraIpAddress.Text;
-            if (!int.TryParse(txtCameraPort.Text, out int port))
+            if (textBoxIP.Text == "" || textBoxPort.Text == "" ||
+                textBoxUserName.Text == "" || textBoxPassword.Text == "")
             {
-                MessageBox.Show("请输入有效的端口号。");
+                MessageBox.Show("Please input IP, Port, User name and Password!");
                 return;
             }
 
             try
             {
-                CameraConnectionManager.Instance.SetIPAndPort(ipAddress,port);
-                await CameraConnectionManager.Instance.ConnectAsync();
-                MessageBox.Show("连接成功！");
+                CameraConnectionManager.Instance.SetIPAndPort(textBoxIP.Text, textBoxPort.Text, textBoxUserName.Text, textBoxPassword.Text);
+                CameraConnectionManager.Instance.Connect();
             }
             catch (Exception ex)
             {

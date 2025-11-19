@@ -125,10 +125,10 @@ namespace kyDemo.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            (bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
-            textBox1.Text = cameraX.ToString("F3");
-            textBox2.Text = cameraY.ToString("F3");
-            textBox3.Text = cameraZ.ToString("F3");
+            //(bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
+            //textBox1.Text = cameraX.ToString("F3");
+            //textBox2.Text = cameraY.ToString("F3");
+            //textBox3.Text = cameraZ.ToString("F3");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

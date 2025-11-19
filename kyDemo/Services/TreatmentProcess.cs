@@ -239,13 +239,13 @@ namespace kyDemo.Services
                     //回就绪点拍照
                     PLCConnectionManager.Instance.GoReady();
                     //获取相机终点
-                    (bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
+                    //(bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
                     //如果相机未回复，退出破碎
-                    if (!result)
-                    {
-                        break;
-                    }
-                    InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
+                    //if (!result)
+                    //{
+                    //    break;
+                    //}
+                    //InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
                 }
 
                 ///< 开始推散

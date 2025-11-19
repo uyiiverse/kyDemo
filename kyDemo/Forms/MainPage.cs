@@ -28,18 +28,17 @@ namespace kyDemo
             EquipmentConfiguration equipmentConfiguration = new EquipmentConfiguration(this);
             equipmentConfiguration.ShowDialog();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void materialButton1_Click(object sender, EventArgs e)
         {
             isRemote = !isRemote;
             if (isRemote)
             {
-                button1.Text = "远程";
+                materialButton1.Text = "远程";
                 ModbusClient.Instance.StartReadingTask();
             }
             else
             {
-                button1.Text = "自主";
+                materialButton1.Text = "自主";
                 ModbusClient.Instance.StopReadingTask();
             }
             Console.WriteLine($"当前状态: {(isRemote ? "远程" : "自主")}");
@@ -141,6 +140,16 @@ namespace kyDemo
         {
             IOMonitor testPage = new IOMonitor(this);
             testPage.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CameraConnectionManager.Instance.PreView(RealPlayWnd.Handle, textBoxChannel.Text, textBoxID.Text);
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            CameraConnectionManager.Instance.StopPreView();
         }
     }
 }

@@ -27,11 +27,11 @@ namespace kyDemo
         private void button1_Click(object sender, EventArgs e)
         {
             //获取相机的一个点
-            (bool result, double x, double y, double z)  = CameraConnectionManager.Instance.GetPoints();
-            if(result)
-            {
-                Console.WriteLine("获取成功.");
-            }
+            //(bool result, double x, double y, double z)  = CameraConnectionManager.Instance.GetPoints();
+            //if(result)
+            //{
+            //    Console.WriteLine("获取成功.");
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,11 +41,11 @@ namespace kyDemo
             {
                 if (TreatmentProcess.GetMode() == TreatmentProcess.Mode.insert)
                 {
-                    (bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
-                    if (result)
-                    {
-                        TreatmentProcess.InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
-                    }
+                    //(bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
+                    //if (result)
+                    //{
+                    //    TreatmentProcess.InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
+                    //}
                 }
                 else
                 {
