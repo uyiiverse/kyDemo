@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.RealPlayWnd = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -44,6 +45,23 @@
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label15 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label11 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label12 = new ReaLTaiizor.Controls.MaterialLabel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnParaSet = new Sunny.UI.UIImageButton();
             this.btnHistory = new Sunny.UI.UIImageButton();
@@ -52,29 +70,13 @@
             this.uiImageButton2 = new Sunny.UI.UIImageButton();
             this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RealPlayWnd = new System.Windows.Forms.PictureBox();
             this.uiImageButton3 = new Sunny.UI.UIImageButton();
             this.uiImageButton4 = new Sunny.UI.UIImageButton();
-            this.label12 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label11 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label10 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label9 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label7 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label5 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label3 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.label15 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RealPlayWnd)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnParaSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnChart)).BeginInit();
@@ -82,10 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RealPlayWnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton4)).BeginInit();
-            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -108,28 +108,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1941, 956);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton1.Location = new System.Drawing.Point(4, 6);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(133, 78);
-            this.materialButton1.TabIndex = 7;
-            this.materialButton1.Text = "远程";
-            this.materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -146,6 +124,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1796, 942);
             this.tableLayoutPanel2.TabIndex = 5;
+            // 
+            // RealPlayWnd
+            // 
+            this.RealPlayWnd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RealPlayWnd.BackColor = System.Drawing.SystemColors.WindowText;
+            this.RealPlayWnd.Location = new System.Drawing.Point(3, 3);
+            this.RealPlayWnd.Name = "RealPlayWnd";
+            this.RealPlayWnd.Size = new System.Drawing.Size(1639, 936);
+            this.RealPlayWnd.TabIndex = 5;
+            this.RealPlayWnd.TabStop = false;
             // 
             // flowLayoutPanel3
             // 
@@ -169,6 +159,28 @@
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(143, 934);
             this.flowLayoutPanel3.TabIndex = 1;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSize = false;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.materialButton1.Location = new System.Drawing.Point(4, 6);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(133, 78);
+            this.materialButton1.TabIndex = 7;
+            this.materialButton1.Text = "远程";
+            this.materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // button6
             // 
@@ -280,6 +292,228 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel2.Controls.Add(this.label23);
+            this.flowLayoutPanel2.Controls.Add(this.label15);
+            this.flowLayoutPanel2.Controls.Add(this.label1);
+            this.flowLayoutPanel2.Controls.Add(this.label3);
+            this.flowLayoutPanel2.Controls.Add(this.label2);
+            this.flowLayoutPanel2.Controls.Add(this.label5);
+            this.flowLayoutPanel2.Controls.Add(this.label4);
+            this.flowLayoutPanel2.Controls.Add(this.label7);
+            this.flowLayoutPanel2.Controls.Add(this.label6);
+            this.flowLayoutPanel2.Controls.Add(this.label9);
+            this.flowLayoutPanel2.Controls.Add(this.label8);
+            this.flowLayoutPanel2.Controls.Add(this.label10);
+            this.flowLayoutPanel2.Controls.Add(this.label14);
+            this.flowLayoutPanel2.Controls.Add(this.label11);
+            this.flowLayoutPanel2.Controls.Add(this.label16);
+            this.flowLayoutPanel2.Controls.Add(this.label12);
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 11);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(133, 942);
+            this.flowLayoutPanel2.TabIndex = 4;
+            this.flowLayoutPanel2.WrapContents = false;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(3, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(130, 39);
+            this.label23.TabIndex = 93;
+            this.label23.Text = "油压";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label15.Depth = 0;
+            this.label15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(3, 39);
+            this.label15.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(130, 77);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "undefined";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 39);
+            this.label1.TabIndex = 94;
+            this.label1.Text = "油温";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Depth = 0;
+            this.label3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label3.Location = new System.Drawing.Point(3, 155);
+            this.label3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 77);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "undefined";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 232);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 39);
+            this.label2.TabIndex = 95;
+            this.label2.Text = "油位";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Depth = 0;
+            this.label5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label5.Location = new System.Drawing.Point(3, 271);
+            this.label5.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(130, 77);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "undefined";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 348);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 39);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "电流";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Depth = 0;
+            this.label7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label7.Location = new System.Drawing.Point(3, 387);
+            this.label7.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(130, 77);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "undefined";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 464);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 39);
+            this.label6.TabIndex = 97;
+            this.label6.Text = "电压";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Depth = 0;
+            this.label9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label9.Location = new System.Drawing.Point(3, 503);
+            this.label9.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(130, 77);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "undefined";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(3, 580);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 32);
+            this.label8.TabIndex = 99;
+            this.label8.Text = "控制器连接状态";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Depth = 0;
+            this.label10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label10.Location = new System.Drawing.Point(3, 612);
+            this.label10.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(130, 77);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "undefined";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 689);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(130, 39);
+            this.label14.TabIndex = 100;
+            this.label14.Text = "PLC连接状态";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Depth = 0;
+            this.label11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label11.Location = new System.Drawing.Point(3, 728);
+            this.label11.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 77);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "undefined";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 805);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(130, 39);
+            this.label16.TabIndex = 101;
+            this.label16.Text = "相机连接状态";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Depth = 0;
+            this.label12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.label12.Location = new System.Drawing.Point(3, 844);
+            this.label12.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 77);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "undefined";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblTitle
             // 
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -290,11 +524,12 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(549, 50);
             this.lblTitle.TabIndex = 15;
-            this.lblTitle.Text = "可视化大屏";
+            this.lblTitle.Text = "破碎机器人控制系统";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnParaSet
             // 
+            this.btnParaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnParaSet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
             this.btnParaSet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnParaSet.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
@@ -303,7 +538,7 @@
             this.btnParaSet.ImageDisabled = ((System.Drawing.Image)(resources.GetObject("btnParaSet.ImageDisabled")));
             this.btnParaSet.ImageHover = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
             this.btnParaSet.ImagePress = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
-            this.btnParaSet.Location = new System.Drawing.Point(353, 36);
+            this.btnParaSet.Location = new System.Drawing.Point(1433, 36);
             this.btnParaSet.Name = "btnParaSet";
             this.btnParaSet.Size = new System.Drawing.Size(103, 59);
             this.btnParaSet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -422,20 +657,9 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // RealPlayWnd
-            // 
-            this.RealPlayWnd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RealPlayWnd.BackColor = System.Drawing.SystemColors.WindowText;
-            this.RealPlayWnd.Location = new System.Drawing.Point(3, 3);
-            this.RealPlayWnd.Name = "RealPlayWnd";
-            this.RealPlayWnd.Size = new System.Drawing.Size(1639, 936);
-            this.RealPlayWnd.TabIndex = 5;
-            this.RealPlayWnd.TabStop = false;
-            // 
             // uiImageButton3
             // 
+            this.uiImageButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.uiImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
             this.uiImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton3.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
@@ -444,7 +668,7 @@
             this.uiImageButton3.ImageDisabled = ((System.Drawing.Image)(resources.GetObject("uiImageButton3.ImageDisabled")));
             this.uiImageButton3.ImageHover = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
             this.uiImageButton3.ImagePress = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
-            this.uiImageButton3.Location = new System.Drawing.Point(571, 36);
+            this.uiImageButton3.Location = new System.Drawing.Point(1651, 36);
             this.uiImageButton3.Name = "uiImageButton3";
             this.uiImageButton3.Size = new System.Drawing.Size(103, 59);
             this.uiImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,6 +680,7 @@
             // 
             // uiImageButton4
             // 
+            this.uiImageButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.uiImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
             this.uiImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton4.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
@@ -464,7 +689,7 @@
             this.uiImageButton4.ImageDisabled = ((System.Drawing.Image)(resources.GetObject("uiImageButton4.ImageDisabled")));
             this.uiImageButton4.ImageHover = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
             this.uiImageButton4.ImagePress = global::kyDemo.Properties.Resources.科技经典蓝_未选中状态按钮背景;
-            this.uiImageButton4.Location = new System.Drawing.Point(462, 36);
+            this.uiImageButton4.Location = new System.Drawing.Point(1542, 36);
             this.uiImageButton4.Name = "uiImageButton4";
             this.uiImageButton4.Size = new System.Drawing.Size(103, 59);
             this.uiImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -473,228 +698,6 @@
             this.uiImageButton4.Tag = "2";
             this.uiImageButton4.Text = "测试窗口";
             this.uiImageButton4.Click += new System.EventHandler(this.uiImageButton4_Click);
-            // 
-            // label12
-            // 
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Depth = 0;
-            this.label12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label12.Location = new System.Drawing.Point(3, 844);
-            this.label12.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 77);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "undefined";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Depth = 0;
-            this.label11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label11.Location = new System.Drawing.Point(3, 728);
-            this.label11.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 77);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "undefined";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Depth = 0;
-            this.label10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label10.Location = new System.Drawing.Point(3, 612);
-            this.label10.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 77);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "undefined";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Depth = 0;
-            this.label9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label9.Location = new System.Drawing.Point(3, 503);
-            this.label9.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 77);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "undefined";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Depth = 0;
-            this.label7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label7.Location = new System.Drawing.Point(3, 387);
-            this.label7.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 77);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "undefined";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Depth = 0;
-            this.label5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label5.Location = new System.Drawing.Point(3, 271);
-            this.label5.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 77);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "undefined";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Depth = 0;
-            this.label3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.label3.Location = new System.Drawing.Point(3, 155);
-            this.label3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 77);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "undefined";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label15.Depth = 0;
-            this.label15.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(3, 39);
-            this.label15.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(130, 77);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "undefined";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel2.Controls.Add(this.label23);
-            this.flowLayoutPanel2.Controls.Add(this.label15);
-            this.flowLayoutPanel2.Controls.Add(this.label1);
-            this.flowLayoutPanel2.Controls.Add(this.label3);
-            this.flowLayoutPanel2.Controls.Add(this.label2);
-            this.flowLayoutPanel2.Controls.Add(this.label5);
-            this.flowLayoutPanel2.Controls.Add(this.label4);
-            this.flowLayoutPanel2.Controls.Add(this.label7);
-            this.flowLayoutPanel2.Controls.Add(this.label6);
-            this.flowLayoutPanel2.Controls.Add(this.label9);
-            this.flowLayoutPanel2.Controls.Add(this.label8);
-            this.flowLayoutPanel2.Controls.Add(this.label10);
-            this.flowLayoutPanel2.Controls.Add(this.label14);
-            this.flowLayoutPanel2.Controls.Add(this.label11);
-            this.flowLayoutPanel2.Controls.Add(this.label16);
-            this.flowLayoutPanel2.Controls.Add(this.label12);
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 11);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(133, 942);
-            this.flowLayoutPanel2.TabIndex = 4;
-            this.flowLayoutPanel2.WrapContents = false;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(3, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(130, 39);
-            this.label23.TabIndex = 93;
-            this.label23.Text = "油压";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 39);
-            this.label1.TabIndex = 94;
-            this.label1.Text = "油温";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 232);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 39);
-            this.label2.TabIndex = 95;
-            this.label2.Text = "油位";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 39);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "电流";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(3, 464);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 39);
-            this.label6.TabIndex = 97;
-            this.label6.Text = "电压";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(3, 580);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 32);
-            this.label8.TabIndex = 99;
-            this.label8.Text = "控制器连接状态";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 689);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(130, 39);
-            this.label14.TabIndex = 100;
-            this.label14.Text = "PLC连接状态";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(3, 805);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(130, 39);
-            this.label16.TabIndex = 101;
-            this.label16.Text = "相机连接状态";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainPage
             // 
@@ -719,8 +722,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.RealPlayWnd)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnParaSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnChart)).EndInit();
@@ -728,10 +733,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RealPlayWnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton4)).EndInit();
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

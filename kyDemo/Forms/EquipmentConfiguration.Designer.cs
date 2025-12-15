@@ -38,21 +38,20 @@
             this.label23 = new System.Windows.Forms.Label();
             this.txtControlIpAddress = new Sunny.UI.UITextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button7 = new Sunny.UI.UISymbolButton();
+            this.button8 = new Sunny.UI.UISymbolButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txtRMCIpAddress = new Sunny.UI.UITextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button7 = new Sunny.UI.UISymbolButton();
-            this.button8 = new Sunny.UI.UISymbolButton();
-            this.label10 = new System.Windows.Forms.Label();
             this.button9 = new Sunny.UI.UISymbolButton();
             this.button10 = new Sunny.UI.UISymbolButton();
             this.label12 = new System.Windows.Forms.Label();
             this.txtCameraPort = new Sunny.UI.UITextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCameraIpAddress = new Sunny.UI.UITextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button5 = new Sunny.UI.UISymbolButton();
             this.button6 = new Sunny.UI.UISymbolButton();
             this.label14 = new System.Windows.Forms.Label();
@@ -60,6 +59,11 @@
             this.label15 = new System.Windows.Forms.Label();
             this.textBox6 = new Sunny.UI.UITextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxPassword = new Sunny.UI.UITextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBoxUserName = new Sunny.UI.UITextBox();
             this.button3 = new Sunny.UI.UISymbolButton();
             this.button4 = new Sunny.UI.UISymbolButton();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,10 +71,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxIP = new Sunny.UI.UITextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new Sunny.UI.UITextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBoxUserName = new Sunny.UI.UITextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -119,7 +119,7 @@
             this.tabPage1.Size = new System.Drawing.Size(859, 594);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "";
-            this.tabPage1.Text = "控制器连接";
+            this.tabPage1.Text = "轨迹规划系统";
             // 
             // button2
             // 
@@ -158,9 +158,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(372, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 27);
+            this.label1.Size = new System.Drawing.Size(132, 27);
             this.label1.TabIndex = 118;
-            this.label1.Text = "控制器连接";
+            this.label1.Text = "轨迹规划系统";
             // 
             // label11
             // 
@@ -238,7 +238,37 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(859, 594);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "PLC连接";
+            this.tabPage2.Text = "液压运动系统";
+            // 
+            // button7
+            // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.button7.Location = new System.Drawing.Point(449, 243);
+            this.button7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(141, 52);
+            this.button7.Symbol = 262480;
+            this.button7.SymbolSize = 40;
+            this.button7.TabIndex = 123;
+            this.button7.Text = "断开连接";
+            this.button7.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // button8
+            // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.button8.Location = new System.Drawing.Point(256, 243);
+            this.button8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(141, 52);
+            this.button8.Symbol = 61528;
+            this.button8.SymbolSize = 40;
+            this.button8.TabIndex = 122;
+            this.button8.Text = "连接";
+            this.button8.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // label5
             // 
@@ -277,9 +307,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(356, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 27);
+            this.label2.Size = new System.Drawing.Size(132, 27);
             this.label2.TabIndex = 119;
-            this.label2.Text = "液压PLC连接";
+            this.label2.Text = "液压运动系统";
             // 
             // tabPage3
             // 
@@ -297,87 +327,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(859, 594);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "视觉连接";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Location = new System.Drawing.Point(104, 4);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(859, 594);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "modbus";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
-            this.tabPage5.Controls.Add(this.label17);
-            this.tabPage5.Controls.Add(this.textBoxPassword);
-            this.tabPage5.Controls.Add(this.label18);
-            this.tabPage5.Controls.Add(this.textBoxUserName);
-            this.tabPage5.Controls.Add(this.button3);
-            this.tabPage5.Controls.Add(this.button4);
-            this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.textBoxPort);
-            this.tabPage5.Controls.Add(this.label8);
-            this.tabPage5.Controls.Add(this.textBoxIP);
-            this.tabPage5.Controls.Add(this.label9);
-            this.tabPage5.Location = new System.Drawing.Point(104, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(859, 594);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "海康连接";
-            // 
-            // button7
-            // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.button7.Location = new System.Drawing.Point(449, 243);
-            this.button7.MinimumSize = new System.Drawing.Size(1, 1);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(141, 52);
-            this.button7.Symbol = 262480;
-            this.button7.SymbolSize = 40;
-            this.button7.TabIndex = 123;
-            this.button7.Text = "断开连接";
-            this.button7.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
-            // 
-            // button8
-            // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(256, 243);
-            this.button8.MinimumSize = new System.Drawing.Size(1, 1);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(141, 52);
-            this.button8.Symbol = 61528;
-            this.button8.SymbolSize = 40;
-            this.button8.TabIndex = 122;
-            this.button8.Text = "连接";
-            this.button8.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(398, 116);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 27);
-            this.label10.TabIndex = 120;
-            this.label10.Text = "相机连接";
+            this.tabPage3.Text = "视觉识别系统";
             // 
             // button9
             // 
@@ -470,6 +420,35 @@
             this.txtCameraIpAddress.Text = "192.168.1.13";
             this.txtCameraIpAddress.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.txtCameraIpAddress.Watermark = "";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(383, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(132, 27);
+            this.label10.TabIndex = 120;
+            this.label10.Text = "视觉识别系统";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
+            this.tabPage4.Controls.Add(this.button5);
+            this.tabPage4.Controls.Add(this.button6);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.textBox6);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Location = new System.Drawing.Point(104, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Size = new System.Drawing.Size(859, 594);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "远程遥控系统";
             // 
             // button5
             // 
@@ -570,15 +549,95 @@
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(390, 141);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(134, 27);
+            this.label16.Size = new System.Drawing.Size(132, 27);
             this.label16.TabIndex = 127;
-            this.label16.Text = "modbus连接";
+            this.label16.Text = "远程遥控系统";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
+            this.tabPage5.Controls.Add(this.label17);
+            this.tabPage5.Controls.Add(this.textBoxPassword);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.textBoxUserName);
+            this.tabPage5.Controls.Add(this.button3);
+            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.textBoxPort);
+            this.tabPage5.Controls.Add(this.label8);
+            this.tabPage5.Controls.Add(this.textBoxIP);
+            this.tabPage5.Controls.Add(this.label9);
+            this.tabPage5.Location = new System.Drawing.Point(104, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(859, 594);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "视频监控系统";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(165, 346);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(132, 27);
+            this.label17.TabIndex = 137;
+            this.label17.Text = "PASSWORD";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.BackColor = System.Drawing.Color.Transparent;
+            this.textBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
+            this.textBoxPassword.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxPassword.ForeColor = System.Drawing.Color.White;
+            this.textBoxPassword.Location = new System.Drawing.Point(318, 337);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPassword.MinimumSize = new System.Drawing.Size(1, 16);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Padding = new System.Windows.Forms.Padding(5);
+            this.textBoxPassword.ShowText = false;
+            this.textBoxPassword.Size = new System.Drawing.Size(249, 40);
+            this.textBoxPassword.TabIndex = 136;
+            this.textBoxPassword.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBoxPassword.Watermark = "";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(221, 291);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(76, 27);
+            this.label18.TabIndex = 135;
+            this.label18.Text = "NAME";
+            // 
+            // textBoxUserName
+            // 
+            this.textBoxUserName.BackColor = System.Drawing.Color.Transparent;
+            this.textBoxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUserName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
+            this.textBoxUserName.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxUserName.ForeColor = System.Drawing.Color.White;
+            this.textBoxUserName.Location = new System.Drawing.Point(318, 287);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxUserName.MinimumSize = new System.Drawing.Size(1, 16);
+            this.textBoxUserName.Name = "textBoxUserName";
+            this.textBoxUserName.Padding = new System.Windows.Forms.Padding(5);
+            this.textBoxUserName.ShowText = false;
+            this.textBoxUserName.Size = new System.Drawing.Size(249, 40);
+            this.textBoxUserName.TabIndex = 134;
+            this.textBoxUserName.Text = "admin";
+            this.textBoxUserName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBoxUserName.Watermark = "";
             // 
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(486, 387);
+            this.button3.Location = new System.Drawing.Point(447, 397);
             this.button3.MinimumSize = new System.Drawing.Size(1, 1);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 52);
@@ -593,7 +652,7 @@
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(293, 387);
+            this.button4.Location = new System.Drawing.Point(254, 397);
             this.button4.MinimumSize = new System.Drawing.Size(1, 1);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(141, 52);
@@ -609,7 +668,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(268, 226);
+            this.label7.Location = new System.Drawing.Point(229, 236);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 27);
             this.label7.TabIndex = 131;
@@ -624,7 +683,7 @@
             this.textBoxPort.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxPort.ForeColor = System.Drawing.Color.White;
             this.textBoxPort.IntValue = 60001;
-            this.textBoxPort.Location = new System.Drawing.Point(357, 217);
+            this.textBoxPort.Location = new System.Drawing.Point(318, 227);
             this.textBoxPort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxPort.MinimumSize = new System.Drawing.Size(1, 16);
             this.textBoxPort.Name = "textBoxPort";
@@ -641,7 +700,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(304, 174);
+            this.label8.Location = new System.Drawing.Point(265, 184);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 27);
             this.label8.TabIndex = 129;
@@ -654,7 +713,7 @@
             this.textBoxIP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
             this.textBoxIP.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxIP.ForeColor = System.Drawing.Color.White;
-            this.textBoxIP.Location = new System.Drawing.Point(357, 167);
+            this.textBoxIP.Location = new System.Drawing.Point(318, 177);
             this.textBoxIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxIP.MinimumSize = new System.Drawing.Size(1, 16);
             this.textBoxIP.Name = "textBoxIP";
@@ -671,70 +730,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(423, 103);
+            this.label9.Location = new System.Drawing.Point(384, 113);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 27);
+            this.label9.Size = new System.Drawing.Size(132, 27);
             this.label9.TabIndex = 127;
-            this.label9.Text = "海康连接";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(204, 336);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(132, 27);
-            this.label17.TabIndex = 137;
-            this.label17.Text = "PASSWORD";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
-            this.textBoxPassword.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxPassword.ForeColor = System.Drawing.Color.White;
-            this.textBoxPassword.Location = new System.Drawing.Point(357, 327);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxPassword.MinimumSize = new System.Drawing.Size(1, 16);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Padding = new System.Windows.Forms.Padding(5);
-            this.textBoxPassword.ShowText = false;
-            this.textBoxPassword.Size = new System.Drawing.Size(249, 40);
-            this.textBoxPassword.TabIndex = 136;
-            this.textBoxPassword.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textBoxPassword.Watermark = "";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(260, 281);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(76, 27);
-            this.label18.TabIndex = 135;
-            this.label18.Text = "NAME";
-            // 
-            // textBoxUserName
-            // 
-            this.textBoxUserName.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxUserName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
-            this.textBoxUserName.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxUserName.ForeColor = System.Drawing.Color.White;
-            this.textBoxUserName.Location = new System.Drawing.Point(357, 277);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxUserName.MinimumSize = new System.Drawing.Size(1, 16);
-            this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Padding = new System.Windows.Forms.Padding(5);
-            this.textBoxUserName.ShowText = false;
-            this.textBoxUserName.Size = new System.Drawing.Size(249, 40);
-            this.textBoxUserName.TabIndex = 134;
-            this.textBoxUserName.Text = "admin";
-            this.textBoxUserName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textBoxUserName.Watermark = "";
+            this.label9.Text = "视频监控系统";
             // 
             // EquipmentConfiguration
             // 

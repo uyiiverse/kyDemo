@@ -10,7 +10,7 @@ namespace kyDemo
         private static PLCConnectionManager _instance;
         private RMCLink rmc;
         public string serverIp { get; set; }
-        private const int DataSize = 50;        //实时读或者写的数据长度
+        private const int DataSize = 100;        //实时读或者写的数据长度
         private const int chunkSize = 100;      //长曲线数据分段时设置的每一段数据长度
         private const int variableSpace = 200;  //长曲线数据的空间是从第200开始往后，前200个是通讯及控制器编程用到的变量空间
         //private const float xInterval = 0.01;                     //时间间隔，0.001代表1ms，以此类推0.1代表100ms，1代表1s
@@ -236,6 +236,55 @@ namespace kyDemo
         public float GetOilPress()  //获取液压油油压
         {
             return readData[16];
+        }
+        public float GetMotorStart()  //获取电机启停
+        {
+            return readData[88];
+        }
+        public float GetEmergencyStop()  //获取液压油油压
+        {
+            return readData[89];
+        }
+        public float GetPoSui()  //获取破碎
+        {
+            return readData[90];
+        }
+        public float GetLaBa()  //获取喇叭
+        {
+            return readData[91];
+        }
+
+        public float GetHuiZhuan()  //获取回转
+        {
+            return readData[80];
+        }
+        public float GetDaBi()  //获取大臂控制值
+        {
+            return readData[81];
+        }
+        public float GeErBi()  //获取二臂控制值
+        {
+            return readData[82];
+        }
+        public float GetSanBi()  //获取三臂控制值
+        {
+            return readData[83];
+        }
+        public float GetHuiZhuanVoltageOutput()  //获取回转输出电压
+        {
+            return readData[21];
+        }
+        public float GetDaBiVoltageOutput()  //获取大臂输出电压
+        {
+            return readData[22];
+        }
+        public float GetErBiVoltageOutput()  //获取二臂输出电压
+        {
+            return readData[23];
+        }
+        public float GetSanBiVoltageOutput()  //获取三臂输出电压
+        {
+            return readData[24];
         }
         public void EmergencyStop(int enable)
         {

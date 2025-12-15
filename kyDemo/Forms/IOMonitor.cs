@@ -48,32 +48,24 @@ namespace kyDemo.Forms
                             {
                                 // modbus
                                 int _startAddress = 150;
-                                int JingxiaWuliBendiKaiguanlControlValuesIndex = 157 - _startAddress;
                                 int YeyazhanDianjiQitingControlValuesIndex = 177 - _startAddress;
                                 int EmergencyStopControlValuesIndex = 179 - _startAddress;
                                 int PosuiControlValuesIndex = 181 - _startAddress;
                                 int LabaControlValuesIndex = 183 - _startAddress;
-                                int chandouControlValuesIndex = 167 - _startAddress;
+
                                 int huizhuanControlValuesIndex = 161 - _startAddress;
-                                int douganControlValuesIndex = 165 - _startAddress;
                                 int dabiControlValuesIndex = 163 - _startAddress;
-                                int chandouSignControlValuesIndex = 175 - _startAddress;
-                                int huizhuanSignControlValuesIndex = 169 - _startAddress;
-                                int douganSignControlValuesIndex = 173 - _startAddress;
-                                int dabiSignControlValuesIndex = 171 - _startAddress;
-                                labelmobus1.Text = ModbusClient.Instance._controlValues[JingxiaWuliBendiKaiguanlControlValuesIndex].ToString();
-                                labelmobus2.Text = ModbusClient.Instance._controlValues[YeyazhanDianjiQitingControlValuesIndex].ToString();
-                                labelmobus3.Text = ModbusClient.Instance._controlValues[EmergencyStopControlValuesIndex].ToString();
-                                labelmobus4.Text = ModbusClient.Instance._controlValues[PosuiControlValuesIndex].ToString();
-                                labelmobus5.Text = ModbusClient.Instance._controlValues[LabaControlValuesIndex].ToString();
-                                labelmobus6.Text = ModbusClient.Instance._controlValues[chandouControlValuesIndex].ToString();
-                                labelmobus7.Text = ModbusClient.Instance._controlValues[huizhuanControlValuesIndex].ToString();
-                                labelmobus8.Text = ModbusClient.Instance._controlValues[douganControlValuesIndex].ToString();
-                                labelmobus9.Text = ModbusClient.Instance._controlValues[dabiControlValuesIndex].ToString();
-                                labelmobus10.Text = ModbusClient.Instance._controlValues[chandouSignControlValuesIndex].ToString();
-                                labelmobus11.Text = ModbusClient.Instance._controlValues[huizhuanSignControlValuesIndex].ToString();
-                                labelmobus12.Text = ModbusClient.Instance._controlValues[douganSignControlValuesIndex].ToString();
-                                labelmobus13.Text = ModbusClient.Instance._controlValues[dabiSignControlValuesIndex].ToString();
+                                int erbiControlValuesIndex = 165 - _startAddress;
+                                int sanbiControlValuesIndex = 167 - _startAddress;
+
+                                labelmobus1.Text = ModbusClient.Instance._controlValues[YeyazhanDianjiQitingControlValuesIndex].ToString();
+                                labelmobus2.Text = ModbusClient.Instance._controlValues[EmergencyStopControlValuesIndex].ToString();
+                                labelmobus3.Text = ModbusClient.Instance._controlValues[PosuiControlValuesIndex].ToString();
+                                labelmobus4.Text = ModbusClient.Instance._controlValues[LabaControlValuesIndex].ToString();
+                                labelmobus5.Text = ModbusClient.Instance._controlValues[huizhuanControlValuesIndex].ToString();
+                                labelmobus6.Text = ModbusClient.Instance._controlValues[dabiControlValuesIndex].ToString();
+                                labelmobus7.Text = ModbusClient.Instance._controlValues[erbiControlValuesIndex].ToString();
+                                labelmobus8.Text = ModbusClient.Instance._controlValues[sanbiControlValuesIndex].ToString();
                             }
 
                             if (PLCConnectionManager.Instance.GetConnectState())
@@ -82,6 +74,21 @@ namespace kyDemo.Forms
                                 plc2.Text = PLCConnectionManager.Instance.GetL3().ToString();
                                 plc3.Text = PLCConnectionManager.Instance.GetL4().ToString();
                                 plc4.Text = PLCConnectionManager.Instance.GetL5().ToString();
+
+                                plc6.Text = PLCConnectionManager.Instance.GetMotorStart().ToString();
+                                plc7.Text = PLCConnectionManager.Instance.GetEmergencyStop().ToString();
+                                plc8.Text = PLCConnectionManager.Instance.GetPoSui().ToString();
+                                plc9.Text = PLCConnectionManager.Instance.GetLaBa().ToString();
+
+                                plc10.Text = PLCConnectionManager.Instance.GetHuiZhuan().ToString();
+                                plc11.Text = PLCConnectionManager.Instance.GetDaBi().ToString();
+                                plc12.Text = PLCConnectionManager.Instance.GeErBi().ToString();
+                                plc13.Text = PLCConnectionManager.Instance.GetSanBi().ToString();
+
+                                plc14.Text = PLCConnectionManager.Instance.GetHuiZhuanVoltageOutput().ToString();
+                                plc15.Text = PLCConnectionManager.Instance.GetDaBiVoltageOutput().ToString();
+                                plc16.Text = PLCConnectionManager.Instance.GetErBiVoltageOutput().ToString();
+                                plc17.Text = PLCConnectionManager.Instance.GetSanBiVoltageOutput().ToString();
                             }
                             
                         });
