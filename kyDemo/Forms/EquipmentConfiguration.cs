@@ -29,11 +29,11 @@ namespace kyDemo
             //if (ControllerClient.Instance.port_ != "")
             //    txtControlPort.Text = ControllerClient.Instance.port_;
             //txtRMCIpAddress.Text = PLCConnectionManager.Instance.serverIp == "" ? txtRMCIpAddress.Text : PLCConnectionManager.Instance.serverIp;
-            //txtCameraIpAddress.Text = CameraConnectionManager.Instance.serverIp == "" ? txtCameraIpAddress.Text : CameraConnectionManager.Instance.serverIp;
-            //txtCameraPort.Text = CameraConnectionManager.Instance.serverPort == 0 ? txtCameraPort.Text : CameraConnectionManager.Instance.serverPort.ToString();
+            //txtCameraIpAddress.Text = HikVisionConnectionManager.Instance.serverIp == "" ? txtCameraIpAddress.Text : HikVisionConnectionManager.Instance.serverIp;
+            //txtCameraPort.Text = HikVisionConnectionManager.Instance.serverPort == 0 ? txtCameraPort.Text : HikVisionConnectionManager.Instance.serverPort.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string ipAddress = txtControlIpAddress.Text;
             string port = txtControlPort.Text;
@@ -45,7 +45,7 @@ namespace kyDemo
                 MessageBox.Show("连接失败。");
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             ControllerClient.Instance.DisConnect();
         }
@@ -72,19 +72,19 @@ namespace kyDemo
         }
 
         //PLC连接
-        private void button8_Click(object sender, EventArgs e)
+        private void button8_Click_1(object sender, EventArgs e)
         {
             PLCConnectionManager.Instance.SetIP(txtRMCIpAddress.Text);
             PLCConnectionManager.Instance.Connect();
         }
         //PLC断开
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_Click_1(object sender, EventArgs e)
         {
             PLCConnectionManager.Instance.DisConnect();
         }
 
-        //连接相机
-        private async void button4_Click(object sender, EventArgs e)
+        //连接海康相机
+        private void button4_Click_1(object sender, EventArgs e)
         {
             if (textBoxIP.Text == "" || textBoxPort.Text == "" ||
                 textBoxUserName.Text == "" || textBoxPassword.Text == "")
@@ -95,18 +95,19 @@ namespace kyDemo
 
             try
             {
-                CameraConnectionManager.Instance.SetIPAndPort(textBoxIP.Text, textBoxPort.Text, textBoxUserName.Text, textBoxPassword.Text);
-                CameraConnectionManager.Instance.Connect();
+                HikVisionConnectionManager.Instance.SetIPAndPort(textBoxIP.Text, textBoxPort.Text, textBoxUserName.Text, textBoxPassword.Text);
+                HikVisionConnectionManager.Instance.Connect();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"连接失败: {ex.Message}");
             }
         }
-        //断开相机
-        private void button3_Click(object sender, EventArgs e)
+
+        //断开海康相机
+        private void button3_Click_1(object sender, EventArgs e)
         {
-            CameraConnectionManager.Instance.Disconnect();
+            HikVisionConnectionManager.Instance.Disconnect();
         }
 
         private void txtCameraPort_TextChanged(object sender, EventArgs e)
@@ -114,7 +115,7 @@ namespace kyDemo
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click_1(object sender, EventArgs e)
         {
             string ipAddress = textBox6.Text;
             if (!int.TryParse(textBox5.Text, out int port))
@@ -132,10 +133,37 @@ namespace kyDemo
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
             ModbusClient.Instance.Disconnect();
             MessageBox.Show("断开连接。");
         }
+
+        private async void button10_Click_1(object sender, EventArgs e)
+        {
+            string ipAddress = txtCameraIpAddress.Text;
+            if (!int.TryParse(txtCameraPort.Text, out int port))
+            {
+                MessageBox.Show("请输入有效的端口号。");
+                return;
+            }
+
+            try
+            {
+                CameraConnectionManager.Instance.SetIPAndPort(ipAddress, port);
+                await CameraConnectionManager.Instance.ConnectAsync();
+                MessageBox.Show("连接成功！");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"连接失败: {ex.Message}");
+            }
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            CameraConnectionManager.Instance.Disconnect();
+        }
+
     }
 }

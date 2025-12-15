@@ -16,7 +16,6 @@ namespace kyDemo
             parent.Location.X + (parent.Width - this.Width) / 2,
                 parent.Location.Y + (parent.Height - this.Height) / 2
             );
-            label2.BackgroundImageLayout = ImageLayout.Stretch;
             ParamModel.LoadUserData();
             textBox1.Text = ParamModel.Instance.gate_instruction_height.ToString();
             textBox2.Text = ParamModel.Instance.shuffle_instruction_length.ToString();
@@ -27,11 +26,11 @@ namespace kyDemo
         private void button1_Click(object sender, EventArgs e)
         {
             //获取相机的一个点
-            //(bool result, double x, double y, double z)  = CameraConnectionManager.Instance.GetPoints();
-            //if(result)
-            //{
-            //    Console.WriteLine("获取成功.");
-            //}
+            (bool result, double x, double y, double z) = CameraConnectionManager.Instance.GetPoints();
+            if (result)
+            {
+                Console.WriteLine("获取成功.");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,11 +40,11 @@ namespace kyDemo
             {
                 if (TreatmentProcess.GetMode() == TreatmentProcess.Mode.insert)
                 {
-                    //(bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
-                    //if (result)
-                    //{
-                    //    TreatmentProcess.InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
-                    //}
+                    (bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
+                    if (result)
+                    {
+                        TreatmentProcess.InsertGateInstruction(cameraX, cameraY, cameraZ, gate_instruction_height);
+                    }
                 }
                 else
                 {
@@ -58,7 +57,7 @@ namespace kyDemo
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             double gate_instruction_height = 0;   //前端页面输入的门型指令高度
             double shuffle_instruction_length = 0;
@@ -90,7 +89,7 @@ namespace kyDemo
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
             TreatmentProcess.SwitchMode(TreatmentProcess.Mode.auto);
         }

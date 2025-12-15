@@ -53,7 +53,7 @@ namespace kyDemo.Forms
                             label13.Text = currentPositionMCS[2].ToString("F4");
                             label14.Text = currentPositionMCS[3].ToString("F4");
                             label15.Text = currentPositionMCS[4].ToString("F4");
-                            label26.Text = currentPositionMCS[5].ToString("F4");
+                            label16.Text = currentPositionMCS[5].ToString("F4");
                         });
                         count++;
                         Thread.Sleep(1000); // 每秒更新一次
@@ -70,7 +70,7 @@ namespace kyDemo.Forms
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             DateTime now = DateTime.Now;
             string formattedDateTime = now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -93,7 +93,7 @@ namespace kyDemo.Forms
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             double shuffle_instruction_length = 0;
             double shuffle_instruction_width = 0;
@@ -123,12 +123,12 @@ namespace kyDemo.Forms
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
-            //(bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
-            //textBox1.Text = cameraX.ToString("F3");
-            //textBox2.Text = cameraY.ToString("F3");
-            //textBox3.Text = cameraZ.ToString("F3");
+            (bool result, double cameraX, double cameraY, double cameraZ) = CameraConnectionManager.Instance.GetPoints();
+            textBox1.Text = cameraX.ToString("F3");
+            textBox2.Text = cameraY.ToString("F3");
+            textBox3.Text = cameraZ.ToString("F3");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -28,7 +28,7 @@ namespace kyDemo.Forms
             textBox10.Text = ParamModel.Instance.L5_zero.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             double vel = 0;   //前端页面输入的门型指令高度
             double acc = 0;
@@ -66,7 +66,7 @@ namespace kyDemo.Forms
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             double[] currentLengths = PLCConnectionManager.Instance.GetCurrentLength();
             int coordinate = 1; //直角坐标
