@@ -9,8 +9,6 @@ using System.IO;
 
 using System.Runtime.InteropServices;
 using kyDemo;
-using static kyDemo.CHCNetSDK;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 public class HikVisionConnectionManager
 {
@@ -45,8 +43,6 @@ public class HikVisionConnectionManager
         }
         else
         {
-            //保存SDK日志 To save the SDK log
-            CHCNetSDK.NET_DVR_SetLogToFile(3, "C:\\SdkLog\\", true);
         }
     }
 
@@ -70,6 +66,7 @@ public class HikVisionConnectionManager
         serverPassword = password;
     }
 
+
     public void cbLoginCallBack(int lUserID, int dwResult, IntPtr lpDeviceInfo, IntPtr pUser)
     {
         string strLoginCallBack = "登录设备，lUserID：" + lUserID + "，dwResult：" + dwResult;
@@ -79,6 +76,7 @@ public class HikVisionConnectionManager
             uint iErrCode = CHCNetSDK.NET_DVR_GetLastError();
             strLoginCallBack = strLoginCallBack + "，错误号:" + iErrCode;
         }
+
     }
 
     public void Connect()

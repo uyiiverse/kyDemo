@@ -31,7 +31,14 @@ namespace kyDemo.Forms
             updateThread.IsBackground = true; // 设置为后台线程
             updateThread.Start();
         }
-
+        public int ConvertToSignedInt(ushort value)
+        {
+            if (value > 32767)
+            {
+                return value - 65536;
+            }
+            return value;
+        }
         private void UpdateLabel()
         {
             int count = 0;
@@ -46,26 +53,29 @@ namespace kyDemo.Forms
                         {
                             if (ModbusClient.Instance.IsConnected)
                             {
-                                // modbus
-                                int _startAddress = 150;
-                                int YeyazhanDianjiQitingControlValuesIndex = 177 - _startAddress;
-                                int EmergencyStopControlValuesIndex = 179 - _startAddress;
-                                int PosuiControlValuesIndex = 181 - _startAddress;
-                                int LabaControlValuesIndex = 183 - _startAddress;
+                                if (ModbusClient.Instance._controlValues != null)
+                                {
+                                    // modbus
+                                    int _startAddress = 150;
+                                    int YeyazhanDianjiQitingControlValuesIndex = 177 - _startAddress;
+                                    int EmergencyStopControlValuesIndex = 179 - _startAddress;
+                                    int PosuiControlValuesIndex = 181 - _startAddress;
+                                    int LabaControlValuesIndex = 183 - _startAddress;
 
-                                int huizhuanControlValuesIndex = 161 - _startAddress;
-                                int dabiControlValuesIndex = 163 - _startAddress;
-                                int erbiControlValuesIndex = 165 - _startAddress;
-                                int sanbiControlValuesIndex = 167 - _startAddress;
+                                    int huizhuanControlValuesIndex = 161 - _startAddress;
+                                    int dabiControlValuesIndex = 163 - _startAddress;
+                                    int erbiControlValuesIndex = 165 - _startAddress;
+                                    int sanbiControlValuesIndex = 167 - _startAddress;
 
-                                labelmobus1.Text = ModbusClient.Instance._controlValues[YeyazhanDianjiQitingControlValuesIndex].ToString();
-                                labelmobus2.Text = ModbusClient.Instance._controlValues[EmergencyStopControlValuesIndex].ToString();
-                                labelmobus3.Text = ModbusClient.Instance._controlValues[PosuiControlValuesIndex].ToString();
-                                labelmobus4.Text = ModbusClient.Instance._controlValues[LabaControlValuesIndex].ToString();
-                                labelmobus5.Text = ModbusClient.Instance._controlValues[huizhuanControlValuesIndex].ToString();
-                                labelmobus6.Text = ModbusClient.Instance._controlValues[dabiControlValuesIndex].ToString();
-                                labelmobus7.Text = ModbusClient.Instance._controlValues[erbiControlValuesIndex].ToString();
-                                labelmobus8.Text = ModbusClient.Instance._controlValues[sanbiControlValuesIndex].ToString();
+                                    labelmobus1.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[YeyazhanDianjiQitingControlValuesIndex]).ToString();
+                                    labelmobus2.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[EmergencyStopControlValuesIndex]).ToString();
+                                    labelmobus3.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[PosuiControlValuesIndex]).ToString();
+                                    labelmobus4.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[LabaControlValuesIndex]).ToString();
+                                    labelmobus5.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[huizhuanControlValuesIndex]).ToString();
+                                    labelmobus6.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[dabiControlValuesIndex]).ToString();
+                                    labelmobus7.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[erbiControlValuesIndex]).ToString();
+                                    labelmobus8.Text = ConvertToSignedInt(ModbusClient.Instance._controlValues[sanbiControlValuesIndex]).ToString();
+                                }
                             }
 
                             if (PLCConnectionManager.Instance.GetConnectState())
@@ -93,7 +103,7 @@ namespace kyDemo.Forms
                             
                         });
                         count++;
-                        Thread.Sleep(1000); // 每秒更新一次
+                        Thread.Sleep(100); // 每秒更新一次
                     }
                     catch (ObjectDisposedException)
                     {

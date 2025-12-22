@@ -31,8 +31,6 @@ namespace kyDemo
             updateThread = new Thread(UpdateLabel);
             updateThread.IsBackground = true; // 设置为后台线程
             updateThread.Start();
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,9 +75,7 @@ namespace kyDemo
                             label15.Text = PLCConnectionManager.Instance.GetOilPress().ToString();
                             label3.Text = PLCConnectionManager.Instance.GetOilTemperature().ToString();
                             label5.Text = PLCConnectionManager.Instance.GetOilLevel().ToString();
-                            label7.Text = PLCConnectionManager.Instance.GetMotorCurrent().ToString();
-                            label9.Text = PLCConnectionManager.Instance.GetMotorVoltage().ToString(); ;
-                            label10.Text = ControllerClient.Instance.GetConnectState() ? "已连接" : "未连接";
+                            label15.Text = ControllerClient.Instance.GetConnectState() ? "已连接" : "未连接";
                             label11.Text = PLCConnectionManager.Instance.GetConnectState() ? "已连接" : "未连接";
                             label12.Text = HikVisionConnectionManager.Instance.GetConnectState() ? "已连接" : "未连接";
                         });

@@ -73,6 +73,16 @@ namespace kyDemo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap eb38239e5ec6c22b81e9deebfe220e17 {
+            get {
+                object obj = ResourceManager.GetObject("eb38239e5ec6c22b81e9deebfe220e17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cancel_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-48", resourceCulture);
@@ -146,6 +156,16 @@ namespace kyDemo.Properties {
         internal static System.Drawing.Bitmap tuisan {
             get {
                 object obj = ResourceManager.GetObject("tuisan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 微信图片_20251222224642_398_127 {
+            get {
+                object obj = ResourceManager.GetObject("微信图片_20251222224642_398_127", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

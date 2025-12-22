@@ -1,6 +1,7 @@
 ﻿using RMCLinkNET;
 using System;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kyDemo
@@ -18,7 +19,9 @@ namespace kyDemo
         private float[] writeData = new float[DataSize];        //这里暂时没确定写什么所以没写
         private float[][] FourTestCurveData = new float[4][];       //保存四个轴轨迹规划曲线的原始数据
         private System.Threading.Timer readTimer;
-        private const int ReadInterval = 200; // 读取间隔200毫秒
+        private const int ReadInterval = 100; // 读取间隔100毫秒
+        private CancellationTokenSource _cancellationTokenSource;
+        private float heart = 0;
         private PLCConnectionManager() { }
         public static PLCConnectionManager Instance
         {
@@ -35,6 +38,42 @@ namespace kyDemo
         {
             serverIp = ip;
         }
+
+        public void StartHeartTask(CancellationToken cancellationToken)
+        {
+            if (GetConnectState() == false)
+            {
+                Console.WriteLine("Not connected to PLC server.");
+                return;
+            }
+
+            Task.Run(() =>
+            {
+                while (!cancellationToken.IsCancellationRequested)
+                {
+                    try
+                    {
+                        WriteOneDataToRMCRegister(heart, 0);
+                        heart = heart == 0 ? 1 : 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error reading data: {ex.Message}");
+                    }
+
+                    // 每隔一段时间读取一次
+                    Task.Delay(100).Wait();
+                }
+            }, cancellationToken);
+        }
+        public void StopHeartTask()
+        {
+            if (_cancellationTokenSource != null)
+            {
+                _cancellationTokenSource.Cancel();
+                Console.WriteLine("Stopped reading task.");
+            }
+        }
         public void Connect()
         {
             if (rmc == null)
@@ -44,6 +83,8 @@ namespace kyDemo
                 if (rmc != null && !(rmc.IsConnected(PingType.Ping)))
                 {
                     rmc.Connect();
+                    _cancellationTokenSource = new CancellationTokenSource();
+                    StartHeartTask(_cancellationTokenSource.Token);
                     StartReadingData();
                 }
             }
@@ -57,12 +98,12 @@ namespace kyDemo
             if (rmc != null && rmc.IsConnected(PingType.Ping))
             {
                 rmc.Disconnect();
+                StopHeartTask();
                 StopReadingData();
             }
         }
         public bool GetConnectState()
         {
-            //return rmc != null ? rmc.IsConnected(PingType.DoNotPing):false;
             return rmc != null ? rmc.IsConnected(PingType.Ping) : false;        //陈修改：我改成了先ping一下再确定
         }
 
@@ -108,31 +149,17 @@ namespace kyDemo
         }
 
         //*****************写入***********************
-        public void WriteAllDataToRMC(float[] data)    //将50位的数组一次性写入
-        {
-            // TODO: 实现将数据写入下位机的逻辑，发送传入的数组中的数据到下位机  
-            if (rmc == null)
-                return;
-            // TODO: 实现从下位机读取数据的逻辑，将数据填充到传入的数组中  
-            try
-            {
-                //写RMC150indirect data，写到在indirect data map中55寄存器开始。indirect data map最大到255
-                rmc.WriteFFile((int)FileNumber150.fn150IndDataValues, 55, data, 0, data.Length);
-            }
-            catch (ReadWriteFailedException ex)
-            {
-                MessageBox.Show("Unable to read data. " + ex.Message);
-            }
-        }
         public void WriteOneDataToRMCRegister(float data, int offset)    //只写入一个指定的寄存器
         {
-            // TODO: 实现将数据写入下位机的逻辑，发送传入的数组中的数据到下位机  
-            if (rmc == null)
+            if (GetConnectState() == false)
+            {
                 return;
-            // TODO: 实现从下位机读取数据的逻辑，将数据填充到传入的数组中  
+            }
+                
             try
             {
                 float[] dataVector = { data };
+                Console.WriteLine($"液压 {55 + offset}：{data}");
                 //写RMC150indirect data，写到在indirect data map中55寄存器开始。indirect data map最大到255
                 rmc.WriteFFile((int)FileNumber150.fn150IndDataValues, 55+offset, dataVector, 0, 1);
             }
@@ -143,10 +170,10 @@ namespace kyDemo
         }
         public void WriteOneDataToRMCRegisterAbsolute(float data, int address)    //只写入一个指定的寄存器
         {
-            // TODO: 实现将数据写入下位机的逻辑，发送传入的数组中的数据到下位机  
-            if (rmc == null)
+            if (GetConnectState() == false)
+            {
                 return;
-            // TODO: 实现从下位机读取数据的逻辑，将数据填充到传入的数组中  
+            }
             try
             {
                 float[] dataVector = { data };
@@ -155,7 +182,7 @@ namespace kyDemo
             }
             catch (ReadWriteFailedException ex)
             {
-                System.Windows.Forms.MessageBox.Show("Unable to read data. " + ex.Message);
+                MessageBox.Show("Unable to read data. " + ex.Message);
             }
         }
         public void PrepareWriteToRMC(float[] data)

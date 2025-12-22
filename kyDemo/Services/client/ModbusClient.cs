@@ -63,6 +63,8 @@ namespace kyDemo.Services.client
                 _modbusMaster = factory.CreateMaster(_tcpClient);
                 _connected = true;
 
+                //StartReadingTask();
+                
                 Console.WriteLine("Connected to Modbus server.");
                 return true;
             }
@@ -88,28 +90,28 @@ namespace kyDemo.Services.client
             Console.WriteLine("控制值：");
 
             Console.WriteLine($"液压站电机启停：{ConvertToSignedInt(_controlValues[YeyazhanDianjiQitingControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[huizhuanControlValuesIndex], 88);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[YeyazhanDianjiQitingControlValuesIndex]), 88);
 
             Console.WriteLine($"急停：{ConvertToSignedInt(_controlValues[EmergencyStopControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[EmergencyStopControlValuesIndex], 89);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[EmergencyStopControlValuesIndex]), 89);
 
             Console.WriteLine($"破碎：{ConvertToSignedInt(_controlValues[PosuiControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[PosuiControlValuesIndex], 90);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[PosuiControlValuesIndex]), 90);
 
             Console.WriteLine($"喇叭：{ConvertToSignedInt(_controlValues[LabaControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[PosuiControlValuesIndex], 91);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[LabaControlValuesIndex]), 91);
 
             Console.WriteLine($"回转控制值：{ConvertToSignedInt(_controlValues[huizhuanControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[huizhuanControlValuesIndex], 80);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[huizhuanControlValuesIndex]), 80);
 
             Console.WriteLine($"大臂控制值：{ConvertToSignedInt(_controlValues[dabiControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[dabiControlValuesIndex], 81);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[dabiControlValuesIndex]), 81);
 
             Console.WriteLine($"二臂控制值：{ConvertToSignedInt(_controlValues[erbiControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegister(_controlValues[erbiControlValuesIndex], 82);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[erbiControlValuesIndex]), 82);
 
             Console.WriteLine($"三臂控制值：{ConvertToSignedInt(_controlValues[sanbiControlValuesIndex])}");
-            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(_controlValues[sanbiControlValuesIndex], 83);
+            PLCConnectionManager.Instance.WriteOneDataToRMCRegisterAbsolute(ConvertToSignedInt(_controlValues[sanbiControlValuesIndex]), 83);
         }
         // 开启一个任务来定时读取数据
         public void StartReading(CancellationToken cancellationToken)
@@ -137,7 +139,7 @@ namespace kyDemo.Services.client
                     }
 
                     // 每隔一段时间读取一次
-                    Task.Delay(500).Wait();
+                    Task.Delay(50).Wait();
                 }
             }, cancellationToken);
         }
@@ -155,7 +157,7 @@ namespace kyDemo.Services.client
         }
 
         // 将 Modbus 寄存器值转换为有符号整数
-        private int ConvertToSignedInt(ushort value)
+        public int ConvertToSignedInt(ushort value)
         {
             if (value > 32767)
             {
@@ -172,7 +174,10 @@ namespace kyDemo.Services.client
                 Console.WriteLine("Not connected. Cannot start reading task.");
                 return;
             }
-
+            if (_cancellationTokenSource != null)
+            {
+                return;
+            }
             _cancellationTokenSource = new CancellationTokenSource();
             StartReading(_cancellationTokenSource.Token);
             Console.WriteLine("Started reading task.");

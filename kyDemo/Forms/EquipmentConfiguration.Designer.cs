@@ -296,7 +296,7 @@
             this.txtRMCIpAddress.ShowText = false;
             this.txtRMCIpAddress.Size = new System.Drawing.Size(249, 40);
             this.txtRMCIpAddress.TabIndex = 120;
-            this.txtRMCIpAddress.Text = "192.168.1.61";
+            this.txtRMCIpAddress.Text = "192.168.1.11";
             this.txtRMCIpAddress.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.txtRMCIpAddress.Watermark = "";
             // 
@@ -538,7 +538,7 @@
             this.textBox6.ShowText = false;
             this.textBox6.Size = new System.Drawing.Size(249, 40);
             this.textBox6.TabIndex = 128;
-            this.textBox6.Text = "127.0.0.1";
+            this.textBox6.Text = "192.168.1.62";
             this.textBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.textBox6.Watermark = "";
             // 
@@ -678,11 +678,11 @@
             // 
             this.textBoxPort.BackColor = System.Drawing.Color.Transparent;
             this.textBoxPort.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPort.DoubleValue = 60001D;
+            this.textBoxPort.DoubleValue = 8000D;
             this.textBoxPort.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(42)))), ((int)(((byte)(66)))));
             this.textBoxPort.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxPort.ForeColor = System.Drawing.Color.White;
-            this.textBoxPort.IntValue = 60001;
+            this.textBoxPort.IntValue = 8000;
             this.textBoxPort.Location = new System.Drawing.Point(318, 227);
             this.textBoxPort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxPort.MinimumSize = new System.Drawing.Size(1, 16);
@@ -691,7 +691,7 @@
             this.textBoxPort.ShowText = false;
             this.textBoxPort.Size = new System.Drawing.Size(249, 40);
             this.textBoxPort.TabIndex = 130;
-            this.textBoxPort.Text = "60001";
+            this.textBoxPort.Text = "8000";
             this.textBoxPort.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.textBoxPort.Watermark = "";
             // 
@@ -721,7 +721,7 @@
             this.textBoxIP.ShowText = false;
             this.textBoxIP.Size = new System.Drawing.Size(249, 40);
             this.textBoxIP.TabIndex = 128;
-            this.textBoxIP.Text = "192.168.1.123";
+            this.textBoxIP.Text = "192.168.1.14";
             this.textBoxIP.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.textBoxIP.Watermark = "";
             // 

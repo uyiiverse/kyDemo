@@ -36,3 +36,15 @@ E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDem
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.CoreCompileInputs.cache
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.exe
 E:\1.破碎机\26. 三山岛工业试验\上位机\kyDemo\kyDemo\obj\Debug\kyDemo.pdb
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.AssemblyReference.cache
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.EquipmentConfiguration.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.Forms.IOMonitor.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.MainPage.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.Forms.MotionParameters.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.ProcessSettings.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.Forms.TestPage.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.Properties.Resources.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.GenerateResource.cache
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.exe
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\Debug\kyDemo.pdb

@@ -144,7 +144,7 @@
             this.panel1.Controls.Add(this.label14);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(729, 1086);
+            this.panel1.Size = new System.Drawing.Size(729, 1059);
             this.panel1.TabIndex = 62;
             // 
             // label32
@@ -723,7 +723,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 1088);
+            this.ClientSize = new System.Drawing.Size(732, 1061);
             this.Controls.Add(this.panel1);
             this.Name = "IOMonitor";
             this.Text = "Form1";

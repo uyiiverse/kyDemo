@@ -178,3 +178,51 @@ C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\ReaLTa
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.xml
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.Common.dll
 C:\Users\17299\Desktop\kyDemo2025年6月11日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\NModbus.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.Common.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.dll
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\NModbus.xml
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.xml
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.IOMonitor.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CopyComplete
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+E:\20. 金川\7. 上位机\2025年12月17日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.AssemblyReference.cache
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.EquipmentConfiguration.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.IOMonitor.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.MainPage.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.MotionParameters.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.ProcessSettings.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Forms.TestPage.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.Properties.Resources.resources
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.GenerateResource.cache
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.CoreCompileInputs.cache
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.exe
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.pdb
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe.config
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.exe
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\kyDemo.pdb
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.dll
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\NModbus.dll
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.dll
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.Common.dll
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\SunnyUI.dll
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\Newtonsoft.Json.xml
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\NModbus.xml
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\bin\x64\Debug\ReaLTaiizor.xml
+D:\xwechat_files\wxid_d0hfb8o9rodb22_85c7\msg\file\2025-12\kyDemo2025年12月22日\kyDemo\kyDemo\obj\x64\Debug\kyDemo.csproj.Up2Date
